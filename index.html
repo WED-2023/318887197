@@ -4,175 +4,158 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+
+<!-- Full-page picture section -->
+<div class="full-page-image"> </div>
+
+<!-- Spacer to create scrollable gap -->
+<div class="spacer"></div>
+
+<!-- Navigation -->
+<div class="topnav" id="nav">
+  <a href="#about">About Me</a>
+  <a href="#photos">My Photos</a>
+  <a href="#playlist">My Playlist</a>
+  <a href="#like">Like</a>
+  <a href="#qrcoder">QR code</a>
+  <a href="#spa">Q&A</a>
+  <a href="#contact">Contact Me</a>
 </div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2>About Morgan Freeman</h2>
+  <div class="about-content">
+      <div class="about-text">
+          <p><strong>History & Biography:</strong> Morgan Freeman was born on <strong>June 1, 1937</strong>, in <strong>Memphis, Tennessee, USA</strong>. He grew up in Mississippi and developed an interest in acting at a young age. After serving in the <strong>U.S. Air Force</strong>, he pursued a career in theater and television before making his breakthrough in Hollywood.</p>
+          
+          <p><strong>Career Highlights:</strong> Freeman gained fame in the 1980s and 1990s with iconic roles in films like <em>Driving Miss Daisy (1989)</em>, <em>The Shawshank Redemption (1994)</em>, and <em>Se7en (1995)</em>. Over the years, he has become known for his deep, authoritative voice and wise, mentor-like characters.</p>
+          
+          <p><strong>Hobbies & Interests:</strong> Aside from acting, Freeman is passionate about <strong>aviation</strong>—he even earned his pilot’s license at the age of 65! He also enjoys <strong>sailing</strong> and owns a private ranch in Mississippi where he loves <strong>nature and beekeeping</strong>.</p>
+          
+          <p><strong>Influences & Inspirations:</strong> One of the people who inspired Freeman the most was <strong>Nelson Mandela</strong>, whom he later portrayed in the film <em>Invictus (2009)</em>. He has also expressed admiration for legendary actors like <strong>Sidney Poitier</strong>, who paved the way for Black actors in Hollywood.</p>
+          
+          <p><strong>Legacy & Impact:</strong> With his powerful presence and distinctive voice, Morgan Freeman is considered one of the greatest actors of all time. He has won an <strong>Academy Award (Oscar)</strong> for <em>Million Dollar Baby (2004)</em> and continues to inspire audiences worldwide.</p>
+      </div>
+  </div>
 </section>
 
+<!-- Photo Section -->
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <h2>My Photo Gallery</h2>
+  <div class="gallery">
+    <a href="#photo1">
+      <img src="pictures/images (1).jpeg" alt="Photo 1" class="gallery-image">
+    </a>
+    <a href="#photo2">
+      <img src="pictures/images.jpeg" alt="Photo 2" class="gallery-image">
+    </a>
+    <a href="#photo3">
+      <img src="pictures/shawshank.jpeg" alt="Photo 3" class="gallery-image">
+    </a>
+    <a href="#photo4">
+      <img src="pictures/th.jpeg" alt="Photo 4" class="gallery-image">
+    </a>
+    <a href="#photo5">
+      <img src="pictures/th (1).jpeg" alt="Photo 5" class="gallery-image">
+    </a>
+    <a href="#photo6">
+      <img src="pictures/th (2).jpeg" alt="Photo 6" class="gallery-image">
+    </a>
+  </div>
+
+  <!-- Enlarged images using :target -->
+  <div id="photo1" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/images (1).jpeg" alt="Photo 1">
+  </div>
+  <div id="photo2" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/images.jpeg" alt="Photo 2">
+  </div>
+  <div id="photo3" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/shawshank.jpeg" alt="Photo 3">
+  </div>
+  <div id="photo4" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/th.jpeg" alt="Photo 4">
+  </div>
+  <div id="photo5" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/th (1).jpeg" alt="Photo 5">
+  </div>
+  <div id="photo6" class="modal">
+    <a href="#photos" class="close">&times;</a>
+    <img src="pictures/th (2).jpeg" alt="Photo 6">
+  </div>
 </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+<section id="videos" class="section">
+  <h2>My Favorite Videos</h2>
+  <div class="video-gallery">
+    <!-- Video 1 -->
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/eWxETy7NmFY" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/oxXpB9pSETo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <h2>Give Me a Like</h2>
+  <!-- Facebook Like Button -->
+  <div class="fb-like" 
+       data-href="https://yourwebsite.com" 
+       data-width="" 
+       data-layout="standard" 
+       data-action="like" 
+       data-size="large" 
+       data-share="true">
+  </div>
 </section>
 
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" 
+        nonce="YOUR_NONCE">
+</script>
+
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <h2>Scan My QR Code</h2>
+  <div class="qr-code">
+    <img src="pictures/qr.png" alt="QR Code" class="qr-image">
+    <p>Scan this QR code to visit my GitHub repository!</p>
+  </div>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 ans
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 contact me
-<br/>
-<br/>
-<br/>
+
 </section>
 
 
