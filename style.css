@@ -198,55 +198,55 @@ section {
    Contact Form Styles
    =========================== */
 
-.contact-form {
+   .contact-form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+    flex-direction: column; /* Arrange elements top-to-bottom */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    max-width: 800px; /* Limit the form width */
+    margin: 0 auto; /* Center the form horizontally */
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 .contact-form label {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Larger label text */
     margin-bottom: 10px;
-    color: #fff;
+    color: #fff; /* White text for labels */
     text-align: left;
-    width: 100%;
+    width: 100%; /* Align labels to the left */
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    max-width: 700px;
+    width: 100%; /* Full width for inputs */
+    max-width: 700px; /* Limit input width */
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2em;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
+    font-size: 1.2em; /* Larger input text */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for inputs */
+    color: #333; /* Dark text for inputs */
 }
 
 .contact-form textarea {
-    resize: none;
+    resize: none; /* Disable resizing */
 }
 
 .contact-form button {
-    background-color: #007BFF;
+    background-color: #007BFF; /* Blue button */
     color: white;
     border: none;
     padding: 15px 30px;
-    font-size: 1.5em;
+    font-size: 1.5em; /* Larger button text */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
