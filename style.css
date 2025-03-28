@@ -2,67 +2,58 @@
    Full-Page Background Styles
    =========================== */
 
-/* Full-page image styling */
-.full-page-image {
-    position: fixed; /* Fix the image in place */
+   .full-page-image {
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     width: 100%;
-    background-image: url("pictures/BruceAlmighty.png"); /* Set the background image */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Make the image static */
-    z-index: -1; /* Place the image behind the content */
+    background-image: url("pictures/BruceAlmighty.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 /* ===========================
    Global Styles
    =========================== */
 
-/* Ensure the body and html take up the full height */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: white; /* White text */
-    background: none; /* Remove any solid background color */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: white;
+    overflow-x: hidden;
 }
 
-/* Content section styling */
 section {
-    max-width: 100%; /* Make the text window narrower */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent dark gray background */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-    backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
-    position: relative; /* Ensure it stacks above the background */
-    z-index: 1; /* Place it above the background image */
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 1;
 }
 
-
-/* Spacer to create scrollable gap */
 .spacer {
-    height: 70vh; /* Full viewport height */
+    height: 70vh;
     width: 100%;
 }
 
-
 /* ===========================
-   Section Styles
+   Navigation Styles
    =========================== */
 
-
-/* Slim and compact top nav */
 .topnav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent dark gray */
+    background-color: rgba(30, 30, 30, 0.9);
     padding: 5px 0;
     z-index: 1000;
     display: flex;
@@ -70,10 +61,8 @@ section {
     gap: 15px;
 }
 
-/* Slimmer link styles */
 .topnav a {
-    display: block;
-    color: white; /* White text for links */
+    color: white;
     text-align: center;
     padding: 8px 12px;
     text-decoration: none;
@@ -81,33 +70,28 @@ section {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #555; /* Slightly lighter gray */
-    color: white;
+    background-color: #555;
 }
 
-/* Highlight the active section */
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
     border-radius: 4px;
 }
 
-
 /* ===========================
    Gallery Styles
    =========================== */
 
-/* Photo gallery styling */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    padding: 20px; /* Add padding around the gallery */
-    min-height: 300px; /* Ensure the section is tall enough */
-    box-sizing: border-box; /* Include padding in the height calculation */
+    padding: 20px;
+    min-height: 300px;
+    box-sizing: border-box;
 }
 
 .gallery a {
@@ -127,16 +111,15 @@ section {
     transform: scale(1.4);
 }
 
-/* Modal styling */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
+    background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
 }
@@ -148,7 +131,7 @@ section {
 }
 
 .modal:target {
-    display: flex; /* Show the modal when targeted */
+    display: flex;
 }
 
 .close {
@@ -173,24 +156,24 @@ section {
 .video-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adds space between video frames */
+    gap: 20px;
     justify-content: center;
-    padding: 20px; /* Adds padding around the entire video gallery */
+    padding: 20px;
 }
 
 .video-container {
-    width: 720px; /* Increase the width of the video frame */
-    height: 405px; /* Maintain the 16:9 aspect ratio */
-    max-width: 100%; /* Ensure responsiveness */
+    width: 720px;
+    height: 405px;
+    max-width: 100%;
     overflow: hidden;
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adds a subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .video-container iframe {
     width: 100%;
     height: 100%;
-    border: none; /* Removes the border around the iframe */
+    border: none;
 }
 
 /* ===========================
@@ -203,10 +186,67 @@ section {
 }
 
 .qr-image {
-    width: 200px; /* Adjust the size of the QR code */
+    width: 200px;
     height: auto;
-    border: 2px solid #ccc; /* Optional: Add a border */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+}
+
+/* ===========================
+   Contact Form Styles
+   =========================== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
